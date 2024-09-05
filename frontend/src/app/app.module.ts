@@ -43,7 +43,7 @@ import { AppComponent } from './app.component';
 import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
-  declarations: [],
+  declarations: [AppComponent],
   bootstrap: [AppComponent],
   imports: [
     CommonModule,

@@ -14,5 +14,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'frontend';
+  tas = ["Andrew", "Ajay", "Jade", "Will", "Audrey", "Kiernan", "Ellie"];
+  onClick() {
+    let text = document.querySelector(".ta");
+    let ran = Math.floor(Math.random()*6);
+    text!.innerHTML = this.tas[ran];
+  }
 }
