@@ -14,7 +14,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
 
 /* HTTP and Auth */
-import { RouterModule } from '@angular/router';
 import {
   HTTP_INTERCEPTORS,
   provideHttpClient,
@@ -40,39 +39,14 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatChipsModule } from '@angular/material/chips';
-import { AppRoutingModule } from './app-routing.module';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { TeachingComponent } from './teaching/teaching.component';
-import { TeachingCardWidget } from './teaching/widgets/teaching-card/teaching-card.component';
-import { MarkdownDirective } from './shared/markdown.directive';
-import { NotesCardWidget } from './teaching/widgets/notes-card/notes-card.component';
-import { AppsComponent } from './apps/apps.component';
-import { AppCardWidget } from './apps/widget/app-card/app-card.component';
 import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    AppComponent,
-    NavigationComponent,
-    TeachingComponent,
-    AppsComponent,
-    TeachingCardWidget,
-    NotesCardWidget,
-    AppCardWidget,
-    MarkdownDirective,
-  ],
+  declarations: [],
   bootstrap: [AppComponent],
   imports: [
     CommonModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    /* Routing */
-    AppRoutingModule,
     /* Angular */
     BrowserModule,
     BrowserAnimationsModule,
@@ -100,6 +74,6 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSlideToggleModule,
     MatMenuModule,
   ],
-  providers: [provideHttpClient(withInterceptorsFromDi())],
+  providers: [],
 })
 export class AppModule {}
